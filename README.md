@@ -6,6 +6,8 @@ Frontend y backend por separado: json-server y Vite deben correr en terminales d
 Cambiar puerto: si algún puerto está ocupado, puedes usar otro en json-server (--port 5001) y actualizar la URL en ProductList.jsx.
 Problemas de cache o navegador: si la app no carga, prueba abrir en ventana de incógnito o usar 127.0.0.1 en lugar de localhost.
 
+## 🛠 Instalación y ejecución
+
 Instalar requisitos previos
 Asegúrate de tener instalados:
 Node.js(v18+ recomendado) → incluye npm
@@ -14,8 +16,6 @@ Comprueba las versiones:
 node -v
 npm -v
 git --version
-
-## 🛠 Instalación y ejecución
 
 1. **Clonar el repositorio**
 ```bash
