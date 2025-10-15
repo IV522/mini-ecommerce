@@ -1,6 +1,10 @@
 # Mini Ecommerce - React
-
 Proyecto de prueba técnica para un ecommerce sencillo usando React.
+
+⚠️ Notas importantes
+Frontend y backend por separado: json-server y Vite deben correr en terminales distintas.
+Cambiar puerto: si algún puerto está ocupado, puedes usar otro en json-server (--port 5001) y actualizar la URL en ProductList.jsx.
+Problemas de cache o navegador: si la app no carga, prueba abrir en ventana de incógnito o usar 127.0.0.1 en lugar de localhost.
 
 ## 🛠 Instalación y ejecución
 
@@ -9,17 +13,19 @@ Proyecto de prueba técnica para un ecommerce sencillo usando React.
 git clone https://github.com/IV522/mini-ecommerce.git
 cd mini-ecommerce
 
+⚠️ Importante: Todos los comandos de npm (install, run dev, test) deben ejecutarse dentro de esta carpeta, donde se encuentra package.json.
+
 2. Instalar dependencias:
 npm install
 
-3. Correr el proyecto en modo desarrollo:
-npm run dev
+3. Correr el backend mock (json-server)
+Abre una terminal nueva y ejecuta: npx json-server --watch db.json --port 5000
+Verifica que funcione abriendo: http://localhost:5000/products
 
-4. Correr backend mock (json-server) en puerto 5000
-npx json-server --watch db.json --port 5000
+4. Correr el proyecto en modo desarrollo (frontend)
+En otra terminal (manteniendo abierta la del backend), ejecuta: npm run dev
 
-5. Abrir el proyecto en el navegador:
-Normalmente en: http://localhost:5173/
+CUANDO TERMINES TODOS LOS PASOS EL PROYECTO ESTARA DISPONIBLE EN: http://localhost:5173
 
 🧪 Pruebas unitarias
 
