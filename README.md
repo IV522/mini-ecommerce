@@ -55,6 +55,31 @@ Extras opcionales cubiertos:
 Pruebas unitarias básicas adicionales.
 Diseño de hooks eficiente y limpio.
 
+**DESCRIPCION AMPLIADA**
+El proyecto Mini Ecommerce React es una aplicación de comercio electrónico desarrollada como prueba técnica, construida completamente en React sin necesidad de un backend real.
+Su objetivo principal es demostrar competencias en manejo de estado global, estructura modular de componentes, persistencia de datos, y buenas prácticas en desarrollo frontend.
+
+El proyecto incluye las siguientes características principales:
+- Listado de productos dinámico: Los productos se obtienen desde un backend mock usando json-server. Cada producto muestra imagen, nombre, precio y un botón “Agregar al carrito”. Implementado en ProductList.jsx.
+- Carrito de compras completo: Permite agregar productos, editar cantidades, eliminar productos y ver subtotales por producto y total general. La funcionalidad se gestiona mediante un contexto global (CartContext.jsx) y los componentes CartIcon.jsx, - CartDisplay.jsx, CartSummary.jsx y CartItem.jsx.
+- Acción de pago funcional: Al realizar el pago, el carrito se limpia automáticamente y se muestra un mensaje de agradecimiento al usuario. Implementado en CartPage.jsx y CartSummary.jsx.
+
+Persistencia con LocalStorage:
+El contenido del carrito se mantiene al recargar la página gracias al contexto global y a la integración con localStorage.
+
+Backend mock con JSON-Server:
+El backend simulado corre en http://localhost:5000/products
+ y permite un fetch dinámico de productos. Se puede ajustar el puerto en caso de conflictos.
+
+Uso correcto de React Hooks:
+Se emplean useState, useEffect, useContext y useRef para manejar estado, efectos y acceso global al carrito, siguiendo buenas prácticas de React.
+
+Diseño moderno y animaciones:
+La interfaz incluye carrito flotante, overlay, badge animado, bordes redondeados y efectos fade-in, proporcionando una experiencia de usuario clara y atractiva.
+
+Pruebas unitarias:
+Se incluyen tests con Jest y React Testing Library para CartContext, CartSummary y ProductList. Todas las pruebas pasan al 100%, verificando funcionalidades críticas como addToCart, removeFromCart, updateQuantity, clearCart y cálculo de totales.
+
 📌 Autor
 Jorge Iván González
 Repositorio: https://github.com/IV522/mini-ecommerce
