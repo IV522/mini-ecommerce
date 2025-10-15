@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Manzana",
+      "price": 100,
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=150&q=80",
+      "description": "Manzana fresca y jugosa"
+    },
+    {
+      "id": 2,
+      "name": "Pera",
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1649555150365-b98dfc1505bb?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=870",
+      "description": "Pera dulce y madura"
+    },
+    {
+      "id": 3,
+      "name": "Uva",
+      "price": 300,
+      "image": "https://plus.unsplash.com/premium_photo-1681826659316-fa513caebdb1?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=870",
+      "description": "Uvas frescas y jugosas"
+    }
+  ]
+}

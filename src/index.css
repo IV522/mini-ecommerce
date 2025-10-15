@@ -1,0 +1,134 @@
+/**
+ * index.css
+ * -----------------
+ * Estilos base globales de la aplicación React.
+ * Se encarga de:
+ *  - Configurar la tipografía y renderizado del texto.
+ *  - Aplicar un fondo general (manteniendo el color original).
+ *  - Centrar el contenido de la app en pantalla.
+ *  - Establecer estilos base para botones, enlaces y encabezados.
+ *
+ * ⚙️ En esta versión:
+ *  - El contenido (App.jsx) queda perfectamente centrado.
+ *  - Se conserva el fondo original de Vite/React.
+ *  - Compatible con modo claro/oscuro.
+ */
+
+/* ====================================================== */
+/* 🔹 Variables y configuración global */
+/* ====================================================== */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Soporte para temas claros/oscursos automáticos */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; /* Fondo base oscuro (como en Vite) */
+
+  /* Optimización visual del texto */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ====================================================== */
+/* 🔹 Enlaces */
+/* ====================================================== */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* ====================================================== */
+/* 🔹 Centrado global del contenido */
+/* ====================================================== */
+/**
+ * El body y el #root (contenedor principal de React)
+ * se configuran como un contenedor flexible que centra
+ * todo su contenido tanto vertical como horizontalmente.
+ *
+ * Se eliminó el fondo forzado para mantener el original.
+ */
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh; /* Ocupa toda la altura visible */
+  display: flex;
+  justify-content: center; /* ✅ Centrado horizontal */
+  align-items: center;     /* ✅ Centrado vertical */
+  /* background-color: #242424; ❌ Eliminado para no sobrescribir el fondo original */
+}
+
+/* ====================================================== */
+/* 🔹 Títulos */
+/* ====================================================== */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ====================================================== */
+/* 🔹 Botones */
+/* ====================================================== */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s, transform 0.15s ease;
+}
+
+button:hover {
+  border-color: #646cff;
+  transform: scale(1.03); /* Pequeña animación */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* ====================================================== */
+/* 🔹 Modo claro automático */
+/* ====================================================== */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+
+  /* ❌ Eliminado cambio de fondo forzado */
+  /* body,
+  #root {
+    background-color: #ffffff;
+  } */
+
+  h1 {
+    color: #213547;
+  }
+}
