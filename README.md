@@ -1,16 +1,45 @@
-# React + Vite
+# Mini Ecommerce - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto de prueba técnica para un ecommerce sencillo usando React.
 
-Currently, two official plugins are available:
+## 🛠 Instalación y ejecución
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/IV522/mini-ecommerce.git
+cd mini-ecommerce
 
-## React Compiler
+2. Instalar dependencias:
+npm install
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. Correr el proyecto en modo desarrollo:
+npm run dev
 
-## Expanding the ESLint configuration
+4. Correr backend mock (json-server) en puerto 5000
+npx json-server --watch db.json --port 5000
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. Abrir el proyecto en el navegador:
+Normalmente en: http://localhost:5173/
+
+🧪 Pruebas unitarias
+
+Se incluyen tests usando Jest y React Testing Library.
+
+Ejecutar tests:
+npm run test
+Estado actual: Todos los tests pasan correctamente.
+
+💡 Funcionalidades
+
+Listado de productos desde un JSON mock.
+Carrito con cantidad editable y cálculo de total.
+Acción de pago con mensaje de agradecimiento.
+Persistencia opcional usando localStorage.
+Uso de hooks para manejo de estado global y efectos secundarios.
+Extras opcionales cubiertos:
+Pruebas unitarias básicas adicionales.
+Diseño de hooks eficiente y limpio.
+
+📌 Autor
+Jorge Iván González
+Repositorio: https://github.com/IV522/mini-ecommerce
